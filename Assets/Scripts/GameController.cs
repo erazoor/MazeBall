@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
     }
     
     void Update() {
-        if (Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name != "StartHUD" || SceneManager.GetActiveScene().name != "WinHUD") {
+        if (Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name != "StartHUD") {
             if (!isGamePaused) {
                 ShowPauseMenu();
                 isGamePaused = true;
